@@ -1,2 +1,2 @@
 # Personal_Portfolio
- about me, projects and interests
+About me, projects and interests
