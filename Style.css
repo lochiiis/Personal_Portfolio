@@ -91,6 +91,49 @@ body{
     scale: 1.2;
     opacity: 100%;
 }
+.about{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 90vh;  
+    background-color: #130b28;
+}
+.about h2{
+    font-size: 40px;
+    padding-bottom: 5%
+}
+.about p{
+    font-size: 20px;
+    max-width: 550px;
+    text-align: justify;
+}
+.profilePic{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(212, 113, 213, 0.525);
+    animation: slideRight 1.5s ease-out forwards;
+    opacity: 90%;
+}
+.btn{
+    padding: 10px 20px;
+    background: linear-gradient(290deg,#455bbe,#9341da);
+    color: rgb(214, 220, 249);
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn:hover{
+    background: linear-gradient(290deg,#5487ee,#cc91ff);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
 
 
 
@@ -148,7 +191,15 @@ h4{
     font-weight: 500;
 }
 
+h1,h2{
+    animation: slideUp 1.5s ease-out forwards;
+    font-weight: 700;  
+    background: linear-gradient(to right, #305fbd, #9341da); /* Define the gradient */
+    -webkit-background-clip: text; /* Clip the background to the text -relies on text being transparent*/
+    color: transparent; 
+    text-shadow: 1px 1px 5px rgba(194, 196, 198, 0.168); /* Adds a shadow below text */
 
+}  
 
 
 
@@ -161,6 +212,16 @@ h4{
     0%{
         opacity: 0;
         transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+}
+@keyframes slidRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
     }
     100%{
         opacity: 1;
