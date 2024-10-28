@@ -8,7 +8,7 @@
 
 }
 body{
-   color: #f5f5f5;
+   color:#bebcbe;;
 }
 /*-----navigation-----*/
 .navigation{
@@ -149,7 +149,6 @@ body{
     font-size: 20px;
     max-width: 550px;
     text-align: justify;
-    color: #bebcbe;
 }
 .profilePic{
     width: 350px;
@@ -249,17 +248,15 @@ body{
 }
 .aboutContent p{
     font-size: 20px;
-    max-width: 550px;
+    max-width: 600px;
     text-align: justify;
-    color: #bebcbe;
 }
 .skills-education{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     background-color: #130b28;
-    padding: 10%;
-    padding-bottom: 3%;
+    padding:10% 0 3% 10%;
     
 }
 .education,.skills{
@@ -305,12 +302,104 @@ body{
 }
 
 
+/*-----Projects-----*/
+.Projects{
+    background-color: #130b28;
+}
+.Projects h1,.blog-post h1{
+    font-size: 45px;
+    padding-top: 8%;
+    text-align: center;
+}
+.Projects h2{
+    font-size: 30px;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.projectList{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    gap:80px;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: 0 auto;
+}
+.Projectcard{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(75, 73, 143, 0.166);
+    height: 500px;
+    animation: slideRight 1.5s ease-in forwards;
+    overflow:auto;
+    gap: 40px;
+    background-color: #030115d0;
+    opacity: 90%;
+}
+.Projects img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.Projects a{
+    font-size: 16px;
+}
+
+.Projectcard p{
+    max-width: 400px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.proDesc>p:last-of-type{
+    padding-bottom: 40px;
+    color: rgb(207, 171, 216);
+}
+.blog-post{
+    height: auto;
+    background-color: #130b28;
+    padding: 5%;
+    padding-top: 0;
+}
 
 
+.blog-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}    
+.blog-box{
+    width: 500px;
+    height: 700px;
+    background-color:#030115b2;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 30px;
+}
+.blog-pic{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.blog-text h2{
+    font-size: 25px;
+    padding: 20px;
+}
 
-
-
-
+.blog-text p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.blog-text a{
+    font-size: 14px;
+    margin:20px;
+}
 
 
 
@@ -438,4 +527,5 @@ h1,h2{
 
 /*-----responsive-----*/
 @media (max-width: 800px){
+
 }
