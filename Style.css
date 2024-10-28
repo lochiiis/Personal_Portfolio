@@ -133,6 +133,58 @@ body{
     color: rgb(255, 255, 255);
     transition: 0.2s;
 }
+.project{
+    height: 100vh;
+    background-color:#180e30;
+}
+.projectcontent{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    animation: slideUp 1.8s ease-out forwards;
+    gap:5%;
+}
+.project h2{
+    font-size: 40px;
+    padding: 5%;
+    text-align: center;
+
+
+}
+.projectcard{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(211, 113, 213, 0.384);
+    gap: 20px;
+    background-color: #130b28;
+    opacity: 90%;
+}
+
+.projectcard img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    opacity: 90%;
+}
+.projectcard h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.projectcard p{
+    font-size: 15px;
+}   
+.project-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    
 
 
 
