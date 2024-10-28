@@ -98,7 +98,7 @@ body{
     object-fit: contain;
     padding-top: 5%;
     opacity: 85%;
-
+    animation: float 10s ease-in-out infinite;
 }
 .homecontent{
     display: flex;
@@ -134,7 +134,11 @@ body{
     align-items: center;
     justify-content:space-around;
     height: 90vh;  
-    background-color: #130b28;
+    background-color: #130b28fd;
+    
+}
+.abt{
+    animation: slideUp 1.8s ease-out forwards;
 }
 .about h2{
     font-size: 40px;
@@ -144,6 +148,7 @@ body{
     font-size: 20px;
     max-width: 550px;
     text-align: justify;
+    color: #bebcbe;
 }
 .profilePic{
     width: 350px;
@@ -162,7 +167,6 @@ body{
     text-decoration: none;
     border-radius: 10px;
     font-size: 20px;
-    margin-top: 20px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -181,6 +185,7 @@ body{
     justify-content: center;
     animation: slideUp 1.8s ease-out forwards;
     gap:5%;
+    flex-wrap: wrap;
 }
 .project h2{
     font-size: 40px;
@@ -201,6 +206,7 @@ body{
     gap: 20px;
     background-color: #130b28;
     opacity: 90%;
+
 }
 
 .projectcard img{
@@ -219,7 +225,7 @@ body{
 .project-btn{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
     
@@ -249,30 +255,59 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-----Contact-----*/
+.contactContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: #130b28;
+    padding-top: 8%;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    margin-left: 5%;
+    animation: slideUp 1.5s ease-out forwards;
+}
+.contact-container h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+input[type],textarea{
+    width: 400px;
+    height: 50px;
+    padding-left:25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    max-width: 400px;
+}
+input:focus,textarea:focus{
+    border:3px solid rgb(243, 15, 186);
+}
+button[type="submit"]{
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background: linear-gradient(290deg,#455bbe,#9341da);
+    cursor: pointer;
+    color: rgb(214, 220, 249);
+    font-size: medium;
+    font-weight: 500;
+}
+.contactContent img{
+    width: 480px;
+    opacity: 90%;
+	animation: float 10s linear infinite;
+}
 
 /*-----common styles-----*/
 h4{
@@ -308,7 +343,7 @@ h1,h2{
         transform:translateY(0);
     }
 }
-@keyframes slidRight{
+@keyframes slideRight{
     0%{
         opacity: 0;
         transform: translateX(-50px);
@@ -317,4 +352,19 @@ h1,h2{
         opacity: 1;
         transform:translateY(0);
     }
+}
+
+@keyframes float {
+	0%,100%{
+		transform: translatey(10px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+
+}
+
+
+/*-----responsive-----*/
+@media (max-width: 800px){
 }
