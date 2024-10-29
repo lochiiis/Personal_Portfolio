@@ -567,6 +567,28 @@ h1,h2{
         width: 300px;
         margin: 5%;
     }
+    .aboutContent h1{
+        font-size: 40px;
+    }
+    .aboutContent p{
+        font-size: 16px;
+        max-width: 400px;
+    }
+    .skills-education{
+        padding: 5% 0 3% 8%;
+    }
+    .skills h2,.education h2{
+        font-size: 25px;
+    }
+    .skills ul,.education ul{
+        font-size: 18px;
+    }
+    .education ul li:nth-child(2),.education ul li:nth-child(4){
+        font-size: 14px;
+    }
+    .skills ul> ul>li{
+        font-size: 16px;
+    }
 
     
 
