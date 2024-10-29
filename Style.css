@@ -589,7 +589,29 @@ h1,h2{
     .skills ul> ul>li{
         font-size: 16px;
     }
-
+    .projectList{
+        overflow: scroll;
+    }
+    .proImg img{
+        width: 300px;
+    }
+    .Projects h1,.blog-post h1{
+        font-size: 35px;
+        padding-top: 15%;
+    }
+    .Projects h2{
+        font-size: 25px;
+    }
+    .Projects p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .blog-box{
+        width: 300px;
+        height: auto;
+        text-align: center;
+    }
+    
     
 
 
