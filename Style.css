@@ -556,6 +556,7 @@ h1,h2{
     }
     .profilePic{
         width: 200px;
+        overflow: scroll;
     }
     .about{
         padding: 5%;
@@ -589,9 +590,7 @@ h1,h2{
     .skills ul> ul>li{
         font-size: 16px;
     }
-    .projectList{
-        overflow: scroll;
-    }
+    
     .proImg img{
         width: 300px;
     }
@@ -614,8 +613,8 @@ h1,h2{
     .contact-img{
         display: none;
     }
-
-    
-
+    .contactContent,.intro,.projectList{
+        overflow: scroll;
+    }
 
 }
