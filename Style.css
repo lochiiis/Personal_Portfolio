@@ -18,19 +18,19 @@ body{
     position: fixed;
     width: 100%;
     z-index: 100;
-    background-color:#2A04472B ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding:5px 10% 10px 8%; 
+    background-color:#2A04472B ;
+
 }
 .logo{
     text-decoration: none;
     color: #dfb0b0;
     font-size: 25px;
     font-weight: 700;
-    padding: 0%;
-    width: 40px;
+    width: 50px;
 }
 
 .navbar a{
@@ -111,6 +111,8 @@ body{
     left: 50%;
     top: 25%;
     animation: float 10s ease-in-out infinite;
+
+
 }
 .socials{
     position: absolute;
@@ -183,7 +185,7 @@ body{
     transition: 0.2s;
 }
 .project{
-    height: 100vh;
+    height:auto;
     background-color:#180e30;
 }
 .projectcontent{
@@ -234,6 +236,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    padding-bottom: 50px;
 }
 
     
@@ -477,6 +480,10 @@ button[type="submit"]{
 	animation: float 10s linear infinite;
 }
 
+input[type="email"]:invalid {
+    border: 3px solid #9341da;
+}
+
 /*-----common styles-----*/
 h4{
     text-align: center;
@@ -536,5 +543,32 @@ h1,h2{
 
 /*-----responsive-----*/
 @media (max-width: 800px){
+    .image-container{
+        display: none;
+    }
+    .about h2, .project h2{
+        font-size: 25px;
+    }
+    .about p{
+        font-size: 12px;
+        max-width: 300px;
+        padding-right: 10px;
+    }
+    .profilePic{
+        width: 200px;
+    }
+    .about{
+        padding: 5%;
+    }
+    .about a,.project a{
+        font-size: 14px;
+    }
+    .projectcard{
+        width: 300px;
+        margin: 5%;
+    }
+
+    
+
 
 }
