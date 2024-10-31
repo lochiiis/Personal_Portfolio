@@ -216,6 +216,8 @@ body{
     gap: 20px;
     background-color: #130b28;
     opacity: 90%;
+    animation: slideRight 1.5s ease-in forwards;
+
 
 }
 
@@ -388,6 +390,7 @@ body{
     border-radius: 15px;
     margin: 20px;
     padding: 30px;
+    animation: slideUp 1.5s ease-in forwards;
 }
 .blog-pic{
     width: 100%;
@@ -411,18 +414,6 @@ body{
     font-size: 14px;
     margin:20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -462,7 +453,7 @@ textarea{
     max-width: 400px;
 }
 input:focus,textarea:focus{
-    border:3px solid rgb(243, 15, 186);
+    border:3px solid rgb(15, 163, 243);
 }
 button[type="submit"]{
     border: none;
@@ -480,8 +471,8 @@ button[type="submit"]{
 	animation: float 10s linear infinite;
 }
 
-input[type="email"]:invalid {
-    border: 3px solid #9341da;
+input[type="email"]:focus:invalid {
+    border: 4px solid #c20051;
 }
 
 /*-----common styles-----*/
@@ -539,10 +530,10 @@ h1,h2{
 	}
 
 }
-
+/*-----max-600 ,min 601 and max 1024-----*/
 
 /*-----responsive-----*/
-@media (max-width: 800px){
+@media (min-width: 601px) and (max-width: 1024px){
     .image-container{
         display: none;
     }
@@ -566,7 +557,24 @@ h1,h2{
     }
     .projectcard{
         width: 300px;
-        margin: 5%;
+        height: auto;
+        margin: 10px;
+    }
+    .Projectcard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto; /* Adjust height for stacking */
+    }
+
+    .Projects img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .proDesc {
+        width: 100%;
+        margin-top: 10px; /* Add space between image and description */
     }
     .aboutContent h1{
         font-size: 40px;
@@ -590,10 +598,7 @@ h1,h2{
     .skills ul> ul>li{
         font-size: 16px;
     }
-    
-    .proImg img{
-        width: 300px;
-    }
+
     .Projects h1,.blog-post h1{
         font-size: 35px;
         padding-top: 15%;
@@ -616,5 +621,248 @@ h1,h2{
     .contactContent,.intro,.projectList{
         overflow: scroll;
     }
-
+    
 }
+
+/*-----max-600-----*/
+@media (max-width:600px){
+    .navbar a{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .Homepage{
+        height:fit-content;
+        padding: 5%;
+    }
+    .homecontent{
+        text-align: center;
+        max-width: 100%;
+        top: 30%;
+        
+    }
+    .image-container img{
+        display: none;
+    }
+    .socials{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding:150px;
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    .socials img{
+        width: 30px;
+        padding: 5px;
+    }
+    .homecontent h1{
+        font-size: 36px;
+    }
+    .homecontent h4{
+        font-size: 14px;
+    }
+    .profilePic{
+        width: 150px;
+    }
+    .about{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .btn{
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .profilePic{
+        width: 250px;
+        margin: 20px;
+    }
+    .project h2{
+        font-size: 30px;
+        padding: 20px;
+    }   
+    .projectcontent{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .projectcard{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+    .projectcard img{
+        width: 100%;
+    }
+    .footer{
+        padding: 40px;
+        text-align: center;
+    }
+    .footer-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .About{
+        padding: 8%;
+    }
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutContent h1{
+        font-size: 30px;
+        padding-top: 25%;
+    }
+    .aboutContent p{
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .skills-education{
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        
+    }
+    .education,.skills{
+        width: 100%;
+        text-align: center;
+    }
+    .education ul li:nth-child(2),.education ul li:nth-child(4){
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .education ul li:first-child:before,.education li:nth-child(3):before{
+        content: '✨';
+        opacity: 50%;
+        padding-right: 10px;
+    }
+    
+    .skills h2,.education h2{
+        font-size: 25px;
+    }
+    .skills ul,.education ul{
+        font-size: 18px;
+    }
+    .skills ul> ul>li{
+        width: 80%;
+        font-size: 16px;
+        margin: 10px auto; 
+    }
+    .Projects h1,.blog-post h1{
+        font-size: 30px;
+        padding-top: 25%;
+    }
+    .Projects h2{
+        font-size: 24px;
+    }
+    .projectList{
+        padding: 5%;
+        gap:40px;
+    }
+    .Projectcard{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        padding: 15px;
+    }
+    .Projects img{
+        width: 100%;
+        height: auto;
+    }
+    .Projects p{
+        font-size: 14px;
+    }
+    .Projects a{
+        font-size: 14px;
+    }
+    .blog-box{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        text-align: center;
+    }
+    .blog-box h2{
+        font-size: 20px;
+        padding-top:20px ;
+    }
+    .blog-text p{
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+    }
+    .contactContent{
+        flex-direction: column;
+        height: auto;
+        padding:25% 10%;
+    }
+    .contact-container{
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-container h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    input[type],textarea{
+        width: 100%;
+        height: 40px;
+        padding-left:15px;
+    }
+    textarea{
+        height: 100px;
+        padding-top: 10px;
+        max-width: 100%;
+    }
+    button[type="submit"]{
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .contactContent img{
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
