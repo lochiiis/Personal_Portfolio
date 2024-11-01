@@ -10,8 +10,6 @@
 }
 body{
    color:#bebcbe;
-   
-
 }
 /*---------------------------------navigation---------------------------------*/
 .navigation{
@@ -65,7 +63,6 @@ body{
 }
 .footer-btn{
     padding: 10px 20px;
-
     font-size: 14px;
     text-decoration: none;
     border-radius: 25px;
@@ -137,9 +134,7 @@ body{
 .socials hr{
     width: 100%;
     margin: 10px auto;
-    border: 1px solid #f5f5f58f;
-    transform: rotateY('90deg');
-    
+    border: 1px solid #f5f5f58f;  
 }
 .about{
     display: flex;
@@ -216,7 +211,6 @@ body{
     opacity: 90%;
     animation: slideRight 1.5s ease-in forwards;
 }
-
 .projectcard img{
     width: 300px;
     height: auto;
@@ -490,9 +484,9 @@ h1,h2{
     font-weight: 700;  
     background: linear-gradient(to right, #305fbd, #9341da); /* Define the gradient */
     -webkit-background-clip: text; /* Clip the background to the text -relies on text being transparent*/
+    background-clip: text; /* Standard property for compatibility */
     color: transparent; 
-    text-shadow: 1px 1px 5px rgba(194, 196, 198, 0.168); /* Adds a shadow below text */
-
+    text-shadow: 1px 1px 5px rgba(194, 196, 198, 0.168);
 }  
 
 
@@ -535,6 +529,7 @@ h1,h2{
 
 
 /*---------------------------------responsive---------------------------------*/
+/* for large screens */
 @media (min-width: 601px) and (max-width: 1024px){
     .image-container{
         display: none;
@@ -566,17 +561,17 @@ h1,h2{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: auto; /* Adjust height for stacking */
+        height: auto; 
     }
 
     .Projects img {
-        width: 100%; /* Make the image responsive */
+        width: 100%; 
         height: auto;
     }
 
     .proDesc {
         width: 100%;
-        margin-top: 10px; /* Add space between image and description */
+        margin-top: 10px; 
     }
     .aboutContent h1{
         font-size: 40px;
@@ -626,7 +621,7 @@ h1,h2{
     
 }
 
-/*-----max-600-----*/
+/*for small screens*/
 @media (max-width:600px){
     .navbar a{
         font-size: 12px;
@@ -640,7 +635,6 @@ h1,h2{
         text-align: center;
         max-width: 100%;
         top: 30%;
-        
     }
     .image-container img{
         display: none;
@@ -651,7 +645,7 @@ h1,h2{
         justify-content: center;
         flex-direction: row;
         padding:150px;
-        margin-top: 50%;
+        margin-top: 54%;
         margin-left: 20%;
     }
     .socials img{
@@ -659,13 +653,10 @@ h1,h2{
         padding: 5px;
     }
     .homecontent h1{
-        font-size: 36px;
+        font-size: 38px;
     }
     .homecontent h4{
-        font-size: 14px;
-    }
-    .profilePic{
-        width: 150px;
+        font-size: 15px;
     }
     .about{
         flex-direction: column;
@@ -834,37 +825,4 @@ h1,h2{
         max-width: 300px;
         margin-top: 20px;
     }
-
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
